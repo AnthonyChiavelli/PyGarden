@@ -1,0 +1,44 @@
+#:kivy 1.0.9
+
+<MainWindow>: 
+    BoxLayout:
+        canvas.before:
+            Color:
+                rgba: 0.8666666666666667, 0.8196078431372549, 0.8705882352941177, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        size: root.width, root.height
+        BoxLayout:
+            size_hint: (.3, 1)
+            GridLayout:
+                cols: 1
+                rows:3
+                BoxLayout:
+                    orientation: 'vertical'
+                    Spinner:
+                        text: 'Waveform'
+                        values: "Sine Wave", "Square Wave", "Sawtooth Wave"
+                    Label:
+                        text: 'Master Vol'
+                    Slider:
+                        id: slider
+                        min: 0
+                        max: 100
+                        step: 1
+                        value_track_color: 0.8666666666666667, 0.8196078431372549, 0.8705882352941177, 1
+                        orientation: 'horizontal'
+
+                Button:
+                    background_normal: ''
+                    background_color: (0,0,0, .9)
+                    text: 'press me'
+                Button:
+                    background_color: (0,0,0, .6)
+                    text: 'press me'
+
+        BoxLayout:
+            size_hint: (.6, 1)
+            # Button:
+            #     text: 'press me2'
