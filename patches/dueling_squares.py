@@ -1,10 +1,11 @@
-from filters.low_pass import LowPassFilter
-from patches.instrument import Instrument
-from helpers import amplify, compose_oscillators
-from signal_sources.oscillators import SinWave, SquareWave
 from pygame import midi
-from signal_sources.envelopes import get_adsr_envelope
-from signal_sources.param_source import ModWheelSource
+
+from filters.low_pass import LowPassFilter
+from helpers import amplify, compose_oscillators
+from patches.instrument import Instrument
+from signal_components.envelopes import get_adsr_envelope
+from signal_components.oscillators import SinWave, SquareWave
+from signal_components.param_source import ModWheelSource
 
 
 class DuelingSquares(Instrument):

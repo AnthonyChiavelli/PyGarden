@@ -1,7 +1,9 @@
 import math
-from helpers import generatorize_param
+
 from signal_sources import SignalSource
+
 import consts
+from helpers import generatorize_param
 
 
 class HighPassFilter(SignalSource):

@@ -1,8 +1,10 @@
 import math
-from helpers import generatorize_param
+
 from signal_sources import SignalSource
-from global_data import global_sound_mods
+
 import consts
+from global_data import global_sound_mods
+from helpers import generatorize_param
 
 
 class BandPassFilter(SignalSource):

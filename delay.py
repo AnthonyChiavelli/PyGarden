@@ -1,6 +1,7 @@
 from __future__ import annotations
-from signal_sources.signal_source import SignalSource
+
 import consts
+from signal_components.signal_source import SignalSource
 
 
 class DelayLine(SignalSource):

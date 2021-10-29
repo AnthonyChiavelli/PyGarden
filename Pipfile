@@ -17,8 +17,12 @@ mypy = "*"
 types-pyaudio = "*"
 flake8 = "*"
 black = "*"
+isort = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.9"
+
+[pipenv]
+allow_prereleases = true

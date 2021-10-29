@@ -1,7 +1,8 @@
 import math
-from helpers import generatorize_param
-from signal_sources.signal_source import SignalSource
+
 import consts
+from helpers import generatorize_param
+from signal_components.signal_source import SignalSource
 
 
 class LowPassFilter(SignalSource):

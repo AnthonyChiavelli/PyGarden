@@ -1,9 +1,10 @@
-from patches.instrument import Instrument
-from helpers import amplify, rescale_generator
-from signal_sources.oscillators import SawtoothWave
 from pygame import midi
-from signal_sources.envelopes import get_adsr_envelope
+
 from filters.low_pass import LowPassFilter
+from helpers import amplify, rescale_generator
+from patches.instrument import Instrument
+from signal_components.envelopes import get_adsr_envelope
+from signal_components.oscillators import SawtoothWave
 
 
 class SmoothSaw(Instrument):

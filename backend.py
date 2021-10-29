@@ -1,10 +1,10 @@
-from audio import initialize_audio, initialize_midi_input, midi
-from helpers import compose_oscillators, get_samples
-from delay import DelayLine
-import global_data
-from patches.patches import available_patches
-from global_data import midi_state
 import consts
+import global_data
+from audio import initialize_audio, initialize_midi_input, midi
+from delay import DelayLine
+from global_data import midi_state
+from helpers import compose_oscillators, get_samples
+from patches.patches import available_patches
 
 
 def main_loop():

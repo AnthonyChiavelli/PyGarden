@@ -1,4 +1,4 @@
-from signal_sources.oscillators import Oscillator
+from signal_components.oscillators import Oscillator
 
 
 class Instrument(Oscillator):

@@ -1,0 +1,2 @@
+class SignalComponent:
+    pass

@@ -1,8 +1,9 @@
 import math
-from helpers import generatorize_param
-from signal_sources.signal_source import SignalSource
-from global_data import global_sound_mods
+
 import consts
+from global_data import global_sound_mods
+from helpers import generatorize_param
+from signal_components.signal_source import SignalSource
 
 
 class ResonantFilter(SignalSource):

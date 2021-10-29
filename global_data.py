@@ -1,4 +1,4 @@
-from typing import Dict, Any
+from typing import Any, Dict
 
 midi_state: Dict[Any, Dict[str, Any]] = {}
 global_sound_mods = {

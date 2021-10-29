@@ -1,11 +1,12 @@
 from __future__ import annotations
-from typing import Optional, Tuple, Any
 
-# from typedefs import SignalGenerator
+from typing import Any, Optional, Tuple
+
 from helpers import perpetuity
+from signal_components.signal_component import SignalComponent
 
 
-class SignalSource:
+class SignalSource(SignalComponent):
     def __init__(self, generator: Optional[Any] = None):
         if generator:
             self.generator = generator

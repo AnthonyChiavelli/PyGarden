@@ -1,11 +1,12 @@
-from filters.low_pass import LowPassFilter
-from patches.instrument import Instrument
-from helpers import amplify, compose_oscillators
 from pygame import midi
-from signal_sources.oscillators import SawtoothWave
-from signal_sources.envelopes import get_adsr_envelope, get_ramp
+
 from consts import SAMPLE_RATE
-from signal_sources.param_source import ModWheelSource
+from filters.low_pass import LowPassFilter
+from helpers import amplify, compose_oscillators
+from patches.instrument import Instrument
+from signal_components.envelopes import get_adsr_envelope, get_ramp
+from signal_components.oscillators import SawtoothWave
+from signal_components.param_source import ModWheelSource
 
 
 class QuirkySaw(Instrument):

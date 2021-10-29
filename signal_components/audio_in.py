@@ -1,7 +1,9 @@
 from __future__ import annotations
+
 from typing import Generator
+
 from helpers import generatorize_param
-from signal_sources.signal_source import SignalSource
+from signal_components.signal_source import SignalSource
 
 
 class AudioInSource(SignalSource):

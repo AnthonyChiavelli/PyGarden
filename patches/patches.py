@@ -1,12 +1,12 @@
+from patches.bells import Bells
+from patches.dueling_squares import DuelingSquares
 from patches.flute import Flute
+from patches.pulsar import Pulsar
 from patches.quad_saw import QuadSaw
 from patches.quirky_saw import QuirkySaw
-from patches.xylophone import Xylophone
-from patches.dueling_squares import DuelingSquares
-from patches.bells import Bells
-from patches.smooth_saw import SmoothSaw
-from patches.pulsar import Pulsar
 from patches.resonator import Resonator
+from patches.smooth_saw import SmoothSaw
+from patches.xylophone import Xylophone
 
 available_patches = [
     Resonator,

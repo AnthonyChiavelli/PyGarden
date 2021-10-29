@@ -1,7 +1,9 @@
 from __future__ import annotations
+
 import random
+
 from helpers import generatorize_param, perpetuity
-from signal_sources.signal_source import SignalSource
+from signal_components.signal_source import SignalSource
 from typedefs import SignalGenerator
 
 

@@ -1,10 +1,12 @@
 from __future__ import annotations
+
 from typing import Optional
+
 import consts
-from typedefs import SignalGenerator
-from global_data import midi_state
-from audio import KeyRelease
 import global_data
+from audio import KeyRelease
+from global_data import midi_state
+from typedefs import SignalGenerator
 
 # TODO implement as classes
 

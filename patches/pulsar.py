@@ -1,7 +1,8 @@
-from patches.instrument import Instrument
-from signal_sources.oscillators import SinWave, SquareWave
 from pygame import midi
-from signal_sources.envelopes import get_adsr_envelope
+
+from patches.instrument import Instrument
+from signal_components.envelopes import get_adsr_envelope
+from signal_components.oscillators import SinWave, SquareWave
 
 
 class Pulsar(Instrument):

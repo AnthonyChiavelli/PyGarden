@@ -1,5 +1,6 @@
 import pyaudio
 from pygame import midi
+
 import consts
 
 
@@ -24,4 +25,6 @@ def initialize_audio(
 def initialize_midi_input() -> midi.Input:
     midi.init()
     default_id = midi.get_default_input_id()
+    if default_id == -1:
+        raise IOError("No MIDI device detected")
     return midi.Input(device_id=default_id)

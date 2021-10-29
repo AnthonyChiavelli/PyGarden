@@ -34,5 +34,9 @@ In the future there will be a graphical interface for controlling the synthesize
 ### TODO
 
 TODO: Implement a parent class for all signal acceptors
+
 TODO: Implement a SignalChain construct that can take a chain of SignalAcceptors/SignalGenerators and compose them together
+
 TODO: Make type-safe and lint-free
+
+TODO: Implement all current filters as subclass of a ButterworthFilter class that requires implementation of get_filter_coefficients()

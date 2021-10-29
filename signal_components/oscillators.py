@@ -1,10 +1,12 @@
 from __future__ import annotations
-from typing import Optional
-from helpers import generatorize_param, perpetuity
+
 import math
+from typing import Optional
+
 from consts import SAMPLE_RATE
+from helpers import generatorize_param, perpetuity
+from signal_components.signal_source import SignalSource
 from typedefs import ModParameter, SignalGenerator
-from signal_sources.signal_source import SignalSource
 
 
 class Oscillator(SignalSource):

@@ -1,10 +1,12 @@
 from __future__ import annotations
-from patches.instrument import Instrument
-from helpers import mutiply_generators, compose_oscillators
-from signal_sources.oscillators import Oscillator, SinWave
+
 from pygame import midi
-from signal_sources.envelopes import get_adsr_envelope
-from signal_sources.param_source import ModWheelSource
+
+from helpers import compose_oscillators, mutiply_generators
+from patches.instrument import Instrument
+from signal_components.envelopes import get_adsr_envelope
+from signal_components.oscillators import Oscillator, SinWave
+from signal_components.param_source import ModWheelSource
 from typedefs import SignalGenerator
 
 

@@ -1,6 +1,7 @@
 from __future__ import annotations
-from signal_sources.signal_source import SignalSource
+
 from global_data import global_sound_mods
+from signal_components.signal_source import SignalSource
 
 
 class PitchModWheelSource(SignalSource):

@@ -1,7 +1,10 @@
 from __future__ import annotations
-from typing import Generator, Tuple, List
-from consts import BUFFER_SIZE
+
+from typing import Generator, List, Tuple
+
 import numpy as np
+
+from consts import BUFFER_SIZE
 
 SignalGenerator = Generator[float, None, None]
 
